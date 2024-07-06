@@ -16,11 +16,9 @@ public class ContadorJava {
             validarParametros(parametroUm, parametroDois);
             contar(parametroUm, parametroDois);
         } catch (ParametrosInvalidosException e) {
-            System.err.println(e.getMessage());
+            System.out.println(e.getMessage());
         } catch (InputMismatchException e) {
             System.err.println("Entrada inválida. Digite apenas números.");
-        } finally {
-            terminal.close();
         }
     }
 
